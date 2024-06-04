@@ -1,49 +1,50 @@
 <!DOCTYPE html>
-<main>
 
-  <head>
-    <link rel="stylesheet" href="wordBee.css">
-  </head>
+<head>
+
+<body>
+  <link rel="stylesheet" href="wordBee.css">
   <div class="heading">
-    <h2>Word Bee</h2>
+    <h1>Word Bee</h1>
   </div>
-  <div class="background">
-    <div class="backgroundImage">
-      <div class="wordList">
-        <p id="wordHeading">Words:<br></p>
-        <p id="words"></p>
-      </div>
-      <div id="score">
-        <h1 id="scoreNumber">Score = </h1>
-      </div>
-      <div class="container">
-        <!-- <div class="firstRow">
-          <button class="button" id="button1"></button>
-          <button class="button" id="button2"></button>
-          <button class="button" id="button3"></button>
+  <div class="container">
+    <div class="scoreBoard">
+      <p id="score">Score = 0</p>
+    </div>
+    <div style="display: flex;">
+      <div style="flex-grow: 1; min-width: 60px;"></div>
+      <div class="hexagon" style="flex-grow: 2;">
+        <div class="firstRow">
+          <button class="polygon" id="one"></button>
+          <button class="polygon" id="two"></button>
         </div>
-        <div class="centerRow">
-          <button class="button" id="centerButton"></button>
+        <div class="secondRow">
+          <button class="polygon" id="three"></button>
+          <button class="polygon" id="four"></button>
+          <button class="polygon" id="five"></button>
         </div>
         <div class="thirdRow">
-          <button class="button" id="button5"></button>
-          <button class="button" id="button6"></button>
-          <button class="button" id="button7"></button>
-        </div> -->
-        <div class="spaceEnter">
-          <button id="Delete">Delete</button>
-          <button id="reset">Reset</button>
-          <button id="Enter">Enter </button>
+          <button class="polygon" id="six"></button>
+          <button class="polygon" id="seven"></button>
         </div>
-        <div id="errorMessage">
-          <p id="message"></p>
+        <div class="controlButtons">
+          <button id="delete">Delete</button>
+          <button id="reset">&#9851;</button>
+          <button id="enter">Enter</button>
+        </div>
+        <div class="errorDisplay">
+          <p id="errorMessage"></p>
+        </div>
+        <div class="display">
+          <p id="textDisplay"></p>
         </div>
       </div>
+      <div class="wordList" style="flex-grow: 1; max-width: 320px;">
+        <h1 style="justify-content: center;">Entered Words</h1>
+        <p id="words"></p>
+      </div>
     </div>
-    <p class="display" id="display"></p>
-  </div>
-  <div id="errorMessage">
-    <p id="message"></p>
   </div>
   <script type="module" src="wordBee.js"></script>
-</main>
+  </head>
+</body>

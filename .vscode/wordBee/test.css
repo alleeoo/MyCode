@@ -1,0 +1,50 @@
+.hexagon {}
+
+.thirdRow {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.firstRow {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.secondRow {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.polygon {
+    background-color: aqua;
+    border-color: black;
+    border-width: 10px;
+    width: 50px;
+    height: 55px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border: 10px;
+    margin: 2px;
+    top: 0px;
+}
+
+.four {
+    position: relative;
+}
+
+.top .bot {
+    position: absolute
+}
+
+.five {
+
+    top: 100px;
+}

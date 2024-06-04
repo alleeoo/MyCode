@@ -1,23 +1,23 @@
 import data from "./words_dictionary.json" assert {type: 'json'};
 
-const button1 = document.getElementById("button1");
-const button2 = document.getElementById("button2");
-const button3 = document.getElementById("button3");
-const centerButton = document.getElementById("centerButton");
-const button5 = document.getElementById("button5");
-const button6 = document.getElementById("button6");
-const button7 = document.getElementById("button7");
+const button1 = document.getElementById('one');
+const button2 = document.getElementById('two');
+const button3 = document.getElementById('three');
+const centerButton = document.getElementById('four');
+const button5 = document.getElementById('five');
+const button6 = document.getElementById('six');
+const button7 = document.getElementById('seven');
 
 let wordList = document.getElementById("words");
 
-let display = document.getElementById("display");
-let displayScore = document.getElementById("scoreNumber");
+let display = document.getElementById("textDisplay");
+let displayScore = document.getElementById("score");
 
-const deleteButton = document.getElementById("Delete");
-const EnterButton = document.getElementById("Enter");
+const deleteButton = document.getElementById("delete");
+const EnterButton = document.getElementById("enter");
 const resetButton = document.getElementById("reset");
 
-const errorMessage = document.getElementById("message");
+const errorMessage = document.getElementById("errorMessage");
 
 let score = 0;
 let wordEntered = [];
@@ -113,7 +113,7 @@ function checkValidity() {
                 }
                 else {
                     displayError(`ALREADY ENTERED!`);
-                    //  display.style.color = 'red';
+                    display.style.color = 'red';
                 }
             }
             else {

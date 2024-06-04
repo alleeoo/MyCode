@@ -1,0 +1,22 @@
+.background {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: aqua;
+    width: 1920;
+    height: 1080px;
+
+
+}
+
+.container {
+    display: flex;
+
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow
+}
